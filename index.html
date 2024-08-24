@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="CodeHim">
+      <title> Quick-view Modal Example </title>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- Demo CSS (No need to include it into your project) -->
+      <link rel="stylesheet" href="./css/demo.css">
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'>
+   </head>
+   <body>
+      <header class="cd__intro">
+         <h1> ALL Products </h1>
+      
+      </header>
+      <main class="cd__main">
+        <div class="container">
+          <div id="productContainer"></div>
+      
+          <div class="modal"></div>
+      
+          <div class="modal__content">
+            <i class="modal__close far fa-times-circle"></i>
+      
+            <div class="modal__left">
+              <section style="width: 500px;">
+                <div class="image-holder">
+                  <img src="" alt="Main Product Image">
+                </div>
+      
+                <div class="photo-gallery__wrapper">
+                  <!-- Thumbnails will be dynamically added here -->
+                </div>
+              </section>
+      
+              <div class="detail">
+                <h2 class="detail__title"></h2><br>
+                <p class="detail__description"></p><br>
+                <p class="detail__price"></p>
+                <p>Availability: <strong>In Stock</strong></p><br>
+      
+                <div class="quantity-selector-wrapper">
+                  <button class="quantity-btn decrease " onclick="decreaseQuantity()" >-</button>
+                  <input type="text" id="qty" name="quantity" value="1" min="1" class="quantity-input">
+                  <button class="quantity-btn increase" onclick="increaseQuantity()" >+</button>
+                  <p class="detail__bagBtn">Add to Cart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <footer class="cd__credit"> Distributed By: Rihab BenHassouna <a title="Free web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank"></a></footer>
+      
+      <!-- Script JS -->
+      <script src="./js/script.js"></script>
+      
+   </body>
+</html>
